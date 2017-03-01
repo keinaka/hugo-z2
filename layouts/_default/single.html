@@ -1,6 +1,16 @@
 {{ partial "header.html" . }}
 
 	<main role="main">
+		<h1 class="list-title">{{ .Title }}</h1>
+		<ul itemscope itemtype="http://schema.org/Blog">
+			{{ range .Data.Pages }}
+			<li class="indexLists">
+				<h2 class="entry-title" itemprop="headline"><a href="{{ .RelPermalink }}">{{ .Title }}{{ if .Draft }} #Draft{{ end }}</a></h2>
+				<span class="entry-meta"><time itemprop="datePublished" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 02, 2006" }}</time></span>
+			</li>
+			{{ end }}
+		</ul>
+
 		<article itemscope itemtype="http://schema.org/BlogPosting">
 			<h1 class="entry-title" itemprop="headline">{{ .Title }}</h1>
 			<span class="entry-meta"><time itemprop="datePublished" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 02, 2006" }}</time></span>
