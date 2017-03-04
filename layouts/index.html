@@ -1,12 +1,28 @@
 {{ partial "header.html" . }}
 
-	<main role="main">
-{{ range (where .Data.Pages ".Params.hidefromhome" "!=" "true") }}
-		<article itemscope itemtype="http://schema.org/Blog">
-			<h2 class="entry-title" itemprop="headline"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-			<span class="entry-meta"><time itemprop="datePublished" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 02, 2006" }}</time></span>
-		</article>
-{{ end }}
-	</main>
+<main role="main">
+    <!--
+<div class="intro">
+<h1 id="style-guide-for-nikkei-ui-components">Style Guide for Nikkei UI Components</h1>
+<p>This is a style guide for Nikkei UI Components</p>
+</div>
+-->
+    <ul class="category-column" itemscope itemtype="http://schema.org/Blog">
+        <li class="topCategory basic"><a href="/concept">Basic ></a></li>
+        <li class="topCategory ios"><a href="/ios">iOS ></a></li>
+        <li class="topCategory android"><a href="/android">Android ></a></li>
+
+
+        <!--
+
+        {{ range (where .Data.Pages ".Params.hidefromhome" "!=" "true") }}
+        <li class="categories">
+        <h2 class="entry-title" itemprop="headline"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+        <span class="entry-meta"><time itemprop="datePublished" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 02, 2006" }}</time></span>
+        </li>
+        {{ end }}
+        -->
+    </ul>
+</main>
 
 {{ partial "footer.html" . }}
