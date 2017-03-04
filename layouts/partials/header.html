@@ -17,8 +17,6 @@
 <div class="container">
 
 	<header role="banner">
-		<div class="header-logo">
-			<a href="/"><img src="{{ .Site.Params.logo }}" width="60" height="60" alt="{{ .Site.Title }}"></a>
-		</div>
-		{{ if eq $isHomePage true }}<h1 class="site-title">{{ .Site.Title }}</h1>{{ end }}
+		<a href="/"><h1 class="site-title">{{ .Site.Title }}</h1>
+		</a>
 	</header>
