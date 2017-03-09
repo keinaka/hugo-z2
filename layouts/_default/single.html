@@ -1,7 +1,7 @@
 {{ partial "header.html" . }}
 
 	<main role="main">
-		<!-- todo 削除?
+		<!-- 個別記事のテンプレ　けしちゃだめ
 
 		<h1 class="list-title">{{ .Title }}</h1>
 		<ul itemscope itemtype="http://schema.org/Blog">
@@ -13,9 +13,9 @@
 			{{ end }}
 		</ul>
 		-->
-		before partial
-		{{ partial "leftColumn.html" . }}　
-		after partial
+		before partial aa
+		{{ partial "sidebar.html" . }}
+		after partial a
 		<article itemscope itemtype="http://schema.org/BlogPosting">
 			<h1 class="entry-title" itemprop="headline">{{ .Title }}</h1>
 			<span class="entry-meta"><time itemprop="datePublished" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 02, 2006" }}</time></span>
