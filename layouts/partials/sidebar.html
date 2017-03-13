@@ -6,9 +6,22 @@
 {{ .Site.BaseURL }}
 Site.params
 <br>
-{{ .Site.Params.words }}
+<!--
+
+words {{ .Site.Params.words }}
 <br>
-{{ .Site.Menu }}
+menu {{ .Site.Menus }}
+    {{ range .Site.Menus.main }}
+range {{ with .Site.GetPage "section" "blog" }}{{ .Title }}{{ end }}
+-->
+ul開始
+<ul class="sidebar-menu">
+    {{ range .Data.Pages }}
+    <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+    {{ end }}
+</ul>
+ul終わり
+
 <div>
 sidebar.htmlの先頭です
 </div>
