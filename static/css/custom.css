@@ -33,6 +33,32 @@ a {
 main {
   height: 30rem; }
 
+.sidebar-menu{
+  float: left;
+  width: 25%;
+  color: black;
+  padding-left: 10px;
+}
+.sidebar-section{
+  list-style: none;
+}
+.sidebar-section a{
+  color: black;
+  font-family: gulim;
+  font-size: 20px;
+}
+.sidebar-subseaction{
+  list-style: none;
+}
+.sidebar-subseaction-item a{
+  font-size: 12px;
+  color: gray;
+}
+article{
+  width: 70%;
+  float: right;
+}
+
 .site-title {
   font-family: Century Gothic; }
 
