@@ -34,10 +34,39 @@ main {
   //font-family: Gulim;
   font-family: Century Gothic;
 }
+$sidebar-width: 25%;
+$area-margin: 10px;
+$articleArea-width: calc(100 - $sidebar-width - $area-margin * 4); //todo 効かせる
+
+/*
+
+*/
+.sidebar-menu{
+  float: left;
+  width: $sidebar-width;
+  color: black;
+  margin: $area-margin;
+  padding-left: 10px;
+  border-right: 1px solid #dfdfdf;
+  .sidebar-section{
+    list-style: none;
+  }
+  .sidebar-section a{
+    color: black;
+    font-family: gulim;
+    font-size: 20px;
+  }
+  .sidebar-subseaction{
+    list-style: none;
+  }
+  .sidebar-subseaction-item a{
+    font-size: 12px;
+    color: gray;
+  }
+}
 
 $iosGray: #a6a8ac;
 $androidGreen: #6cb14b;
-
 .category-column{
   width: 100%;
   .topCategory {
@@ -88,6 +117,13 @@ $androidGreen: #6cb14b;
   line-height: 56px;
 }
 
+
+.articleArea {
+  margin: $area-margin;
+  // width: $articleArea-width; //todo 効かせる
+  width: 65%;
+  display: inline-block;
+}
 
 
 .container {
