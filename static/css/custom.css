@@ -1,5 +1,5 @@
 body {
-  font-family: "Roboto", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif,"Roboto";
   background-color: #FCFCFC; }
 
 h1 {
@@ -46,11 +46,13 @@ main {
   margin: 10px;
   padding-left: 10px;
   border-right: 1px solid #dfdfdf; }
+  .sidebar-menu a {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif,"Roboto"; }
   .sidebar-menu .sidebar-section {
     list-style: none; }
   .sidebar-menu .sidebar-section a {
     color: black;
-    font-family: gulim;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif,"Roboto";
     font-size: 20px; }
   .sidebar-menu .sidebar-subseaction {
     list-style: none; }
@@ -65,7 +67,7 @@ main {
     height: 9rem;
     margin: 0;
     font-size: 3rem;
-    font-family: gulim;
+    font-family: "Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
     line-height: 9rem;
     display: block; }
     .category-column .topCategory a {

@@ -1,9 +1,14 @@
 body {
-  font-family: "Roboto", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif,"Roboto";
   background-color: #FCFCFC;
 }
 
-h1 { font-size: 2.1rem; }
+//"Helvetica Neue", Helvetica, Arial, sans-serif,"Roboto";
+
+h1 {
+  font-size: 2.1rem;
+  // font-family: "Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+  }
 h2 { font-size: 1.9rem; }
 h3 { font-size: 1.7rem; }
 h4,
@@ -31,6 +36,7 @@ main {
 
 // about top page
 .site-title{
+
   //font-family: Gulim;
   font-family: Century Gothic;
 }
@@ -48,12 +54,16 @@ $articleArea-width: calc(100 - $sidebar-width - $area-margin * 4); //todo 効か
   margin: $area-margin;
   padding-left: 10px;
   border-right: 1px solid #dfdfdf;
+  a {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif,"Roboto";
+    // "Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+  }
   .sidebar-section{
     list-style: none;
   }
   .sidebar-section a{
     color: black;
-    font-family: gulim;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif,"Roboto";
     font-size: 20px;
   }
   .sidebar-subseaction{
@@ -67,6 +77,7 @@ $articleArea-width: calc(100 - $sidebar-width - $area-margin * 4); //todo 効か
 
 $iosGray: #a6a8ac;
 $androidGreen: #6cb14b;
+
 .category-column{
   width: 100%;
   .topCategory {
@@ -74,7 +85,8 @@ $androidGreen: #6cb14b;
     height: 9rem;
     margin: 0;
     font-size: 3rem;
-    font-family: gulim;
+    // font-family: gulim;
+    font-family: "Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
     line-height: 9rem;
     display: block;
     a {
