@@ -138,3 +138,135 @@ main {
   background: -webkit-gradient(linear, left top, right top, from(white), color-stop(#E1E1E1), to(white));
   background: -webkit-linear-gradient(left, white, #E1E1E1, white);
   background: linear-gradient(to right, white, #E1E1E1, white); }
+
+/* ==========================================================================
+   nui-icon
+   ========================================================================== */
+.nui-icon {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-origin: content-box; }
+  .nui-icon.bg {
+    background-color: black; }
+
+/* ==========================================================================
+   Icon
+   ========================================================================== */
+.demo-icon-examples {
+  clear: both;
+  margin: 20px 0;
+  padding: 0;
+  list-style-type: none;
+  overflow: hidden; }
+
+.demo-icon-example {
+  float: left;
+  margin: 0 0 20px;
+  padding: 0;
+  width: 180px;
+  min-height: 155px;
+  text-align: center; }
+
+.demo-icon-examples .nui-icon {
+  display: inline-block;
+  border: 1px dotted #333;
+  width: 98px;
+  height: 98px;
+  font-size: 80px;
+  line-height: 100px;
+  text-align: center; }
+
+.demo-icon-examples .nui-icon.nui-icon--spinner {
+  border: 0; }
+
+.demo-icon-label {
+  display: block;
+  padding: 5px 0;
+  font-size: 14px;
+  color: #333; }
+
+/**
+  home
+**/
+.ios-homeicon {
+  background-image: url("/images/iosIcons/AppIcon.appiconset/homeicon_180px.png"); }
+
+/**
+  article
+**/
+.ios-evernote_logo {
+  background-image: url("/images/iosIcons/Article/evernote_logo.imageset/evernote_logo.png"); }
+
+.ios-icon_action {
+  background-image: url("/images/iosIcons/Article/icon_action.imageset/icon_action.png"); }
+
+.ios-icon_gift {
+  background-image: url("/images/iosIcons/Article/icon_gift.imageset/gift_44-44.pdf"); }
+
+.ios-icon_next {
+  background-image: url("/images/iosIcons/Article/icon_next.imageset/icon_next@3x.png"); }
+
+.ios-icon_prev {
+  background-image: url("/images/iosIcons/Article/icon_prev.imageset/icon_prev@3x.png"); }
+
+.ios-save_filled {
+  background-image: url("/images/iosIcons/Article/icon_save_filled.imageset/saved_icon_66px.png"); }
+
+.ios-save_outline {
+  background-image: url("/images/iosIcons/Article/icon_save_outline.imageset/save_icon_66px.png"); }
+
+/**
+  empty
+**/
+.ios-icon_empty_follow {
+  background-image: url("/images/iosIcons/Empty/icon_empty_follow.imageset/ab.png"); }
+
+.ios-icon_empty_mynews {
+  background-image: url("/images/iosIcons/Empty/icon_empty_mynews.imageset/mynews.png"); }
+
+.ios-icon_empty_news {
+  background-image: url("/images/iosIcons/Empty/icon_empty_news.imageset/news.png"); }
+
+.ios-icon_empty_paper {
+  background-image: url("/images/iosIcons/Empty/icon_empty_paper.imageset/paper.png"); }
+
+.ios-icon_empty_scrap {
+  background-image: url("/images/iosIcons/Empty/icon_empty_scrap.imageset/save.png"); }
+
+.ios-icon_empty_search {
+  background-image: url("/images/iosIcons/Empty/icon_empty_search.imageset/search.png"); }
+
+.ios-icon_empty_topic {
+  background-image: url("/images/iosIcons/Empty/icon_empty_topic.imageset/topic.png"); }
+
+/**
+  headline
+**/
+.ios-icon_check {
+  background-image: url("/images/iosIcons/Headline/icon_check.imageset/done-2.png"); }
+
+.ios-icon_checkbox_filled {
+  background-image: url("/images/iosIcons/Headline/icon_checkbox_filled.imageset/chekbox_filled.png"); }
+
+.ios-icon_checkbox_outline {
+  background-image: url("/images/iosIcons/Headline/icon_checkbox_outline.imageset/chekboxoutline.png"); }
+
+.ios-icon_clipping {
+  background-image: url("/images/iosIcons/Headline/icon_clipping.imageset.imageset/keyword_66px.png"); }
+
+.ios-icon_company-industry {
+  background-image: url("/images/iosIcons/Headline/icon_company-industry/66w.png"); }
+
+/**
+  tab
+**/
+.ios-icon_daily {
+  background-image: url("/images/iosIcons/Tab/icon_daily.imageset/choyukanicon_75px.png"); }
+
+.ios-icon_web {
+  background-image: url("/images/iosIcons/Tab/icon_web.imageset/webkanicon_75px.png"); }
+
+.ios-icon_mynews {
+  background-image: url("/images/iosIcons/Tab/icon_mynews.imageset/mynews_75px.png"); }
